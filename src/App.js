@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+// import image from '.images/kailua.jpg'
 
 function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=30e35094d4b595c09b3b95d1e6493b81`
+  //const url = `https://api.openweathermap.org/data/2.5/weather?${location}&units=imperial&appid=30e35094d4b595c09b3b95d1e6493b81`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=895284fb2d2c50a520ea537456963d9c`
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
