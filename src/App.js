@@ -1,5 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "./App.css";
 import axios from 'axios'
+// import Cloudy from "./assets/cloudy.jpg";
+// import Rainy from "./assets/rainy.jpg";
+// import Snow from "./assets/snow.jpg";
+// import Sunny from "./assets/sunny.jpg";
 // import image from '.images/kailua.jpg'
 
 function App() {
